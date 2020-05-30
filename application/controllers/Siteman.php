@@ -20,6 +20,11 @@ class Siteman extends CI_Controller {
         }
     }
 
+    fnction tambah_user()
+    {
+        echo "branch jaya";
+    }
+
 }
 
 /* End of file Siteman.php */
