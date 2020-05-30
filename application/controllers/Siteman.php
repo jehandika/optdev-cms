@@ -7,7 +7,18 @@ class Siteman extends CI_Controller {
 	{
 		$data['title'] = 'data';
 		$this->template->load('opt_admin/opt_template','opt_admin/opt_home',$data);
-	}
+    }
+    
+    function user()
+    {
+        cek_session_admin();
+        if($_POST['submit'])
+        {
+            echo "perintah ketika submit";
+        }else{
+            echo "tampilkan view";
+        }
+    }
 
 }
 
